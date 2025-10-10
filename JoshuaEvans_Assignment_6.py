@@ -86,3 +86,6 @@ for name, phone, email, address in contacts:
         last = parts[-1]
         first = ' '.join(parts[:-1])
         formatted_name = f"{last}, {first}"
+    else:
+        formatted_name = name
+    print(f"{formatted_name:<30}{phone:<20}{email}")
