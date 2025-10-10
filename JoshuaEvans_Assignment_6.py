@@ -65,3 +65,24 @@ while True:
     contacts.append((name, phone, email, address))
     count += 1
 
+# === Output Section ===
+print("\n=== CONTACT DIRECTORY ===\n")
+
+for i, (name, phone, email, address) in enumerate(contacts, start=1):
+    print(f"CONTACT {i}:")
+    print(f"Name:    {name}")
+    print(f"Phone:   {phone}")
+    print(f"Email:   {email}")
+    print(f"Address: {address}\n")
+
+print("=== DIRECTORY SUMMARY ===")
+print(f"Total contacts processed: {count}\n")
+
+print("=== FORMATTED FOR PRINTING ===")
+for name, phone, email, address in contacts:
+    # Split name into first and last for formatted listing
+    parts = name.split()
+    if len(parts) >= 2:
+        last = parts[-1]
+        first = ' '.join(parts[:-1])
+        formatted_name = f"{last}, {first}"
