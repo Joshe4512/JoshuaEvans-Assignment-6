@@ -33,6 +33,6 @@ Total contacts processed: 2
 === FORMATTED FOR PRINTING ===
 Doe, John           (555) 123-4567      john@email.com
 
-🧠 Key String Methods
+ Key String Methods
 
 .split() · .join() · .strip() · .title() · .upper() · .lower() · .replace() · .isdigit() · .isalpha()
